@@ -4,9 +4,9 @@ flex
 -----------------------------------
 ### 主要查看网站
 
-<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex" target="_blank">Mozilla flex文档</a> https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex">Mozilla flex文档</a> https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex
 
-<a href="http://www.css88.com/book/css/properties/flex/index.htm" target="_blank">CSS参考手册</a> http://www.css88.com/book/css/properties/flex/index.htm
+<a href="http://www.css88.com/book/css/properties/flex/index.htm">CSS参考手册</a> http://www.css88.com/book/css/properties/flex/index.htm
 
 ### flex 出现的原因：
 >使用弹性盒子的意义是在任何尺寸的屏幕上改变其和其子元素的尺寸填充屏幕可用空间。一个弹性框容器将延展它的子元素以填充可用空间，并且缩小它的子元素来避免溢出。
