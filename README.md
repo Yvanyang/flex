@@ -157,8 +157,9 @@ flex
     
     <' flex-basis '>：用来指定伸缩基准值，即在根据伸缩比率计算出剩余空间的分布之前，「flex子项」长度的起始数值。在「flex」属性中该值如果被省略则默认为「0%」在「flex」属性中该值如果被指定为「auto」，则伸缩基准值的计算值是自身的 <' width '> 设置，如果自身的宽度没有定义，则长度取决于内容。
 
->在定义父元素`dispaly:flex`后使用`flex-flow: <' flex-direction '> || <' flex-wrap '>`定义主轴方向即（左对齐）（顶对齐）和是否换行。`align-items`定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
->flex命令：`flex-grow`用来指定扩展比率,` flex-shrink`用来指定收缩比率,而这两个的分配基准值不同。扩展基准值为flex-grow值，收缩基准值为flex-shrink值*flex-basis。
+在定义父元素`dispaly:flex`后使用`flex-flow: <' flex-direction '> || <' flex-wrap '>`定义主轴方向即（左对齐）（顶对齐）和是否换行。`align-items`定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
+flex命令：`flex-grow`用来指定扩展比率,` flex-shrink`用来指定收缩比率,而这两个的分配基准值不同。扩展基准值为flex-grow值，收缩基准值为flex-shrink值*flex-basis。
+***下面这两个图重点是默认值分别为0和1***
 ><img src="./img/0.png"/>
 
 ><img src="./img/1.png"/>
