@@ -3,8 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>flex</title>
+    <style>
+        .box{
+            display:flex;
+            width:800px;
+            margin:0;
+            padding:10px;
+            list-style:none;
+            background-color:#eee;
+            flex-flow:row nowrap;
+        }
+        .box li{
+            box-sizing: border-box;
+            height:100px;
+            border:1px solid #aaa;
+            text-align:center;}
+        #box1 li{width:100px;}
+        #box1 li:nth-child(2){
+            width:50px;
+            flex-grow:1;
+        }
+        #box1 li:nth-child(3){
+            width:50px;
+            flex-grow:2;
+        }
+        #box1 li:nth-child(4){
+            flex-grow:2;
+        }
+        #box2 li{width:300px;flex-shrink:0;}
+        #box2 li:nth-child(2){
+            width:200px;
+            flex-shrink:1;
+        }
+        #box2 li:nth-child(3){
+            width:200px;
+            flex-shrink:2;
+        }
+        #box2 li:nth-child(4){
+            flex-shrink:2;
+        }
+    </style>
 </head>
 <body>
+    <div class="content">
+        <div>
+            flex-grow:设置
+            父容器宽度 800px 子元素总宽度 400px 剩余宽度 400px flex-grow属性设置的一共为5份
+            <ul>
+                <li>b增加宽度为400px/5*1,增加后为130px</li>
+                <li>c增加宽度为400px/5*2,增加后为210px</li>
+                <li>d增加宽度为400px/5*2,增加后为260px</li>
+            </ul>
+        </div>
+        <ul id="box1" class="box">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+        </ul>
+        <div>
+            flex-grow:设置
+            父容器宽度 800px 子元素总宽度 1300px 溢出宽度 500收缩基数为 200*1 200*2 300*2 和1200
 
+            <ul>
+                <li>b收缩宽度为500px/1200*200*1,缩宽后为116.667····px</li>
+                <li>c收缩宽度为500px/1200*200*2,缩宽后为33.334px</li>
+                <li>d收缩宽度为500px/1200*300*2,缩宽后为50px</li>
+            </ul>
+        </div>
+        <ul id="box2" class="box">
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+        </ul>
+    </div>
 </body>
 </html>
