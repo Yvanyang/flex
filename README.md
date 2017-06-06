@@ -167,6 +167,6 @@ flex命令：`flex-grow`用来指定扩展比率,` flex-shrink`用来指定收�
 ###
 <img src="./img/demo.png"/>
 
-*** config文件更改 local username 防止gitlab 和 github 用户名冲突 ***
+##### config文件更改 local username 防止gitlab 和 github 用户名冲突
 
 
